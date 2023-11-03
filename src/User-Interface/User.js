@@ -40,6 +40,7 @@ function User() {
             axios.post('http://localhost:4000/signup', {...user})
                 .then((res) => {
                     alert(`Your Acount Created Succesfully`)
+                    window.location.reload()
                 }).catch((err) => {
                     alert(err.response.data.message + err.response.status + " Error")
                 })
