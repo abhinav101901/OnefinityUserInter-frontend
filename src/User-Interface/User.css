@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.box1 {
+    background-color: #f9f9f9;
+    top: 18px;
+    left: 20px;
+    font-size: 14px;
+    z-index: 1;
+    /* Set a higher z-index to make it appear on top */
+}
+
+.box2 {
+    position: absolute;
+    top: 18px;
+    left: 180px;
+    font-size: 14px;
+    color: #0074d9;
+    font-weight: bold;
+    z-index: 2;
+    /* Set a lower z-index to make it appear below box1 */
+}
+
+h2 {
+    margin-left: 45%;
+    color: #333;
+}
+
+label {
+    width: 550px;
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: 160%;
+    height: 15px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+button {
+    background-color: #0074d9;
+    color: #fff;
+    padding: 2px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+form {
+    text-align: center;
+}
+
+button[type="submit"] {
+    background-color: #4caf50;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a048;
+}
